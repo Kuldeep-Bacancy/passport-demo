@@ -1,9 +1,13 @@
 const index = (req, res) => {
-  res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home', isLoggedin: req.isAuthenticated() });
 }
 
 const login = (req, res) => {
-  res.render('login', { title: 'Login' });
+  if(req.isAuthenticated()){
+    res.redirect(302, "secret")
+  } else {
+    res.render('login', { title: 'Login' });
+  }
 }
 
 const secret = (req, res) => {
