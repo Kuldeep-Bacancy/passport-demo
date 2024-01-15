@@ -8,6 +8,8 @@
     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
       <% if (!isLoggedin) { %>
         <a type="button" class="btn btn-primary btn-lg px-4 gap-3 me-2" href="/login">Log In</a>
+        <a type="button" class="btn btn-secondary btn-lg px-4 gap-3 me-2" href="/register">Sign Up</a>
+        <a class="btn btn-warning btn-lg px-4 gap-3 me-2" href="/auth/google">Sign in with Google</a>
       <% } else {%>
         <a type="button" class="btn btn-secondary btn-lg px-4 gap-3 me-2" href="/secret">Secret</a>
       <% } %>

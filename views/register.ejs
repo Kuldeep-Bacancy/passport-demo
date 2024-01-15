@@ -1,11 +1,19 @@
 <div class="px-4 py-5 my-5 text-center">
   <img class="d-block mx-auto mb-4" src="https://uilogos.co/img/logomark/u-mark.png" alt="" width="auto" height="150">
-  <h1 class="display-5 fw-bold">Login Here</h1>
+  <h1 class="display-5 fw-bold">Sign Up</h1>
   <div class="col-lg-3 mx-auto">
-    <form action="/login" method="POST">
+    <form action="/signup" method="POST">
+      <div class="mb-2">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" name="username" placeholder="Username" required>
+      </div>
       <div class="mb-2">
         <label for="email" class="form-label">Email</label>
         <input type="text" class="form-control" name="email" placeholder="Email" required>
+      </div>
+      <div class="mb-2">
+        <label for="fullName" class="form-label">FullName</label>
+        <input type="text" class="form-control" name="fullName" placeholder="fullName" required>
       </div>
       <div class="mb-2">
         <label for="password" class="form-label">Password</label>
